@@ -1,3 +1,4 @@
+From NUST College of Electrical and Mechanical Engineering 
 # SIGN-LANGUAGE-TRANSLATOR
 Project Exhibition 'LUMS' 
 # Team
