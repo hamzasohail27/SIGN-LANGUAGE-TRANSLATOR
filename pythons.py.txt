@@ -1,0 +1,106 @@
+import RPi.GPIO as GPIO
+import time
+
+GPIO.setwarnings(False)
+GPIO.cleanup()
+GPIO.setmode(GPIO.BCM)
+
+a1 = 21
+a2 = 20
+a3 = 16
+b1 = 12
+b2 = 1
+b3 = 7
+c1 = 8
+c2 = 25
+c3 = 24
+d1 = 23
+d2 = 18
+e1 = 15
+wave=14
+
+
+
+GPIO.setup(a1, GPIO.IN)
+GPIO.setup(a2, GPIO.IN)
+GPIO.setup(a3, GPIO.IN)
+GPIO.setup(b1, GPIO.IN)
+GPIO.setup(b2, GPIO.IN)
+GPIO.setup(b3, GPIO.IN)
+GPIO.setup(c1, GPIO.IN)
+GPIO.setup(c2, GPIO.IN)
+GPIO.setup(c3, GPIO.IN)
+GPIO.setup(d1, GPIO.IN)
+GPIO.setup(d2, GPIO.IN)
+GPIO.setup(e1, GPIO.IN)
+GPIO.setup(wave,GPIO.OUT)
+
+
+
+
+GPIO.setup(a1,GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+while True:
+       	if GPIO.input(a1) and GPIO.input(b1) and GPIO.input(c1) and GPIO.input(d1):
+                print('b')
+                time.sleep(1.5)
+        if GPIO.input(a2) and GPIO.input(b2) and GPIO.input(c2) and  GPIO.input(d2) and GPIO.input(e1):
+                print('c')
+                time.sleep(1.5) 
+        elif GPIO.input(e1):
+                print('a')
+                time.sleep(1.5)
+	 if GPIO.input(d1):
+                print('d')
+                time.sleep(1.5)
+        if GPIO.input(a3) and GPIO.input(b3) and GPIO.input(c3) and GPIO.input(d2):
+                print('e')
+                time.sleep(1.5)
+	 if GPIO.input(a1) and GPIO.input(b1) and GPIO.input(c1) and GPIO.input(d2):
+                print('f')
+                time.sleep(1.5)
+        if GPIO.input(d1) and GPIO.input(e1):
+                print('g')
+                time.sleep(1.5)
+	if GPIO.input(c1) and GPIO.input (d1):
+                print('h')
+                time.sleep(1.5)
+        if GPIO.input(a1):
+                print('i')
+                time.sleep(1.5)
+	if GPIO.input(a1) and GPIO.input(a2):
+                print('j')
+                time.sleep(1.5)
+        if GPIO.input(c1) and GPIO.input(d1) and GPIO.input(e1):
+                print('k')
+                time.sleep(1.5)
+        if GPIO.input(d1) and GPIO.input(e1):
+                print('l')
+		time.sleep(1.5)
+	 if GPIO.input(c3) and GPIO.input(d2):
+                print('n')
+                time.sleep(1.5)
+        if GPIO.input(a2) and GPIO.input(b2) and GPIO.input(c2) and GPIO.input(d2):
+                print('o')
+                time.sleep(1.5)
+        if GPIO.input(d2) and GPIO.input(e1):
+                print('he/she')
+		time.sleep(1.5)
+	 if GPIO.input(c1) and GPIO.input(d1) and GPIO.input(e1):
+                print('name')
+                time.sleep(1.5)
+        if GPIO.input(d2) and GPIO.input(wave):
+                print('me/i')
+                time.sleep(1.5) 
+        if GPIO.input(d2) and GPIO.input(e1) and GPIO.input(wave):
+                print('fast')
+                time.sleep(1.5)
+	if GPIO.input(wave) and GPIO.input(a1) and GPIO.input(b1) and GPIO.input(c1) and GPIO.input(d1) and GPIO.input(e1):
+                print('hello')
+                time.sleep(1.5)
+
+	
+	
+
+
+	
+	
