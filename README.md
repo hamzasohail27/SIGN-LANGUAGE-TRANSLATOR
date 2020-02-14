@@ -1,5 +1,10 @@
 # SIGN-LANGUAGE-TRANSLATOR
-Project Exhibition 'LUMS'  
+Project Exhibition 'LUMS' 
+# Team
+Lexy-Lads
+# Group Members
+1. Taha Ghani
+2. Hamza Sohail
 # Components 
 1.Arduino uno
 2.Raspberry pi
